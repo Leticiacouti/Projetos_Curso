@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html> <!-- Inicio do arquivo html-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Professores Franciele e Sergio Medina" />
+	<meta name="description" content="HTML, CSS3, !important" />
+	<meta name="Keywords" content="CSS3, folhas de estilo, !important" />
+	<title>Aula 05 - Exemplo 2 (Curso de HTML 5 com VS Code)</title>
+
+	<link rel="stylesheet" type="text/css" href="estrutura2.css"/>
+</head>
+<body>
+	<h1> Regras de precedência </h1>
+	<h2> Efeito cascata (Cascade) do CSS </h2>
+	<p1>
+		No efeito em cascata das folhas, quem prevalece?<br>
+		Que estilo será usado quando houver mais de um estilo especificado para
+		um elemento HTML?
+		Prevalece o item mais específico.<br>
+		As folhas obedecem a regras de precedência onde o número 4 tem a mais alta
+		prioridade:
+		<ol>
+			<li> Estilo inline (dentro de um elemento HTML) </li><br>
+			<li>Folha de estilo interna (na seção da cabeça) </li><br>
+			<li>Folha de estilo externa </li> <br>
+			<li>Padrão do navegador </li> <br>
+		</ol>
+		<br>
+		Assim, um estilo inline (dentro de um elemento HTML) tem a prioridade mais
+		alta, o que significa que ele irá substituir um estilo definido dentro da
+		tag <head>, ou em uma folha de estilo externa, ou em um navegador
+			(um valor padrão).
+		</p1>
+		<hr>
+		<br>
+		<h2> Efeito cascata (Cascade) do CSS</h2>
+		<p2> É simples escrever regras CSS: primeiro escreva o elemento, classe ou
+			ID que se quer estilizar (aí são inclusos seletores avançados) e aplique
+			as propriedades cabíveis.
+			Porém, já aconteceu de você criar uma regra e, por algum motivo, ela não
+			“entrou em ação"? Quer dizer, você a criou esperando que tudo corresse bem,
+			mas, por algum motivo, ela não foi aplicada e outra regra teve precedência?
+			Provavelmente isso acontece com todos que trabalham com CSS.
+			É devido à especificidade de CSS que isso ocorre. <br>
+			Um dos motivos de haver “Cascata” em “Folha de Estilo em Cascata” é referente,
+			justamente, a quão específica determinada regra é, para ser “mais importante”
+			que outras e entrar em ação em detrimento às demais.
+			Pense na especificidade CSS como um sistema de pesos que serve para determinar
+			qual regra CSS tem precedência quando várias podem ser aplicadas ao mesmo
+			elemento. <br>
+			Regras com maior peso têm preferência sobre regras de menor peso e por isso
+			“ganharão” e entrarão em ação quando o navegador renderiza os estilos. <br>
+			Toda regra CSS tem sua especificidade implícita; portanto, mesmo não sabendo,
+			você já se vale da especificidade! A ideia é que, a partir de agora, você
+			faça isso conscientemente.
+			<br>
+			<hr>
+			<h2>Entendendo a especificidade CSS</h2>
+			Existem 4 categorias que definem o nível de especificidade a um dado seletor.
+			Preste atenção na ordem, pois é importante. Para facilitar as explicações,
+			vamos atribuir letras a cada uma:
+			<ol type="a">
+				<li>Estilos inline;</li><br>
+				<li>IDs; </li> <br>
+				<li>Classes, pseudoclasses e atributos; </li><br>
+				<li> Elementos e pseudoelementos. </li><br>
+			</ol>
+		</p2>
+		<br>
+		<h2>Declaração CSS com !important </h2>
+		<p3>
+			Um dos princípios básicos da linguagem é decidir qual regra CSS a ser aplicada
+			em caso de conflito, como no exemplo abaixo:
+			<pre>
+				#elemento1 { color: black; } # elemento1 { color: blue; }
+			</pre>
+			No exemplo acima o conteúdo do texto dentro do elemento de id elemento1
+			será azul, pois a prioridade padrão do css sempre considera a regra que
+			vem por último. Agora utilizando o mesmo exemplo acima com uma pequena
+			alteração:
+			<pre>
+				#elemento1 { color: black !important; } # elemento1 { color: blue; }
+			</pre>
+		</p3>
+
+	</body>
+	</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html> <!-- Inicio do arquivo html-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Professores Franciele e Sergio Medina" />
+	<meta name="description" content="HTML, CSS3, !important" />
+	<meta name="Keywords" content="CSS3, folhas de estilo, !important" />
+	<title>Aula 05 - Exemplo 4 (Curso de HTML 5 com VS Code)</title>
+
+	<link rel="stylesheet" type="text/css" href="estrutura4.css"/>
+</head>
+<body>
+	<h1> Aula 05 - Exemplo 4 (Curso de HTML 5 com VS Code)</h1>
+	<h2> Unidade percentagem ( % ) </h2>
+	<p1>
+		<ol type="a">
+			<li> Apesar de não ser uma unidade de medida, a porcentagem costuma ser
+			bastante utilizada quando falamos de layout responsivo e fluido</li>
+			<li> A porcentagem permite que criemos módulos que sempre vão se readaptar
+			para ocupar a quantidade especificada. </li>
+			<li> Por exemplo, se definirmos um elemento tendo um tamanho de 50%,
+				independente do dispositivo em questão, esse módulo sempre ocupará metade
+			do espaço que lhe cabe (caso esteja dentro de algum outro elemento).</li>
+			<li> A unidade porcento é muito parecida coma unidade “em”, mas possui
+			algumas diferenças fundamentais.</li>
+			<li> Em primeiro lugar, o atual tamanho da fonte é igual a 100% (ou seja
+			12pt = 100%). </li>
+			<li> Durante o uso da unidade porcento, o texto permanece totalmente
+			escalável para dispositivos móveis, a uma medida previamente definida.</li>
+			<li> Valores em percentagem são relativos a um outro valor anterior
+			declarado. </li>
+			<li> Este valor anterior há que estar bem definido e em geral esta definição
+			está em uma determinada propriedade do mesmo elemento.</li>
+			<li> A porcentagem tem um comportamento um tanto parecido com o em, já
+				que ele se relaciona diretamente com o tamanho da propriedade do elemento
+			pai.</li>
+			<li> Desvantagens, temos o mesmo problema que encontramos no em, quanto
+				mais elementos aninhados, mais complicado será de definirmos exatamente o
+			tamanho, por isso, tenha cuidado quando utilizá-la!</li>
+			<pre>
+				p { line-height: 120% } /*120% de'font-size'=12px*/
+			</pre>
+			<h2>Exemplos de como declarar em css:</h2>
+			<pre>
+				h4 { margin: 2ex; } /* margem*/
+			</pre>
+			<hr>
+			<h2> Unidade em </h2>
+			<ol type="I">
+				<li> ao tamanho da fonte ('font-size') herdada; </li>
+				<li> A unidade de medida de comprimento em referencia-se ao tamanho
+				da fonte (letra) do seletor onde for declarada.</li>
+				<li> Ems (em). O “em” é uma unidade escalável. </li>
+				<li> Quando se trata do tamanho da fonte, 1em é igual ao tamanho atual
+				da fonte do elemento-pai. </li>
+				<li> Por exemplo, se o tamanho da fonte do elemento é 12pt, 1em é igual
+				a 12pt. </li>
+				<li> Ems são escaláveis por natureza. 2em seria igual a 24pt, 0.5em seria
+				6pt, etc. </li>
+			</ol>
+			<pre>
+				Exemplo
+				h1
+				{
+					font-size: 1.2em
+				}
+			</pre>
+			<p2>
+				<h2>Explicação</h2>
+				<pre>
+					font-size da tag h1 será 20% maior do que o tamanho das letras herdado pela
+					tag h1.
+					p.ex.: se h1 estiver contido numa div com font-size=10px então font-size
+					de h1 = 12px
+				</pre>
+			</p2>
+		</body>
+		</html>
